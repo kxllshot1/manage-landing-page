@@ -39,6 +39,17 @@ li {
   cursor: pointer;
 }
 
+input {
+  border: none;
+  outline: none;
+  background: var(--neutral-grey);
+  padding: 15px 30px;
+  font-size: 13px;
+  color: var(--primary-blue);
+  border-radius: 25px;
+  font-family: inherit;
+}
+
 .box-nav-links {
   width: 90%;
   background: #fff;
@@ -121,17 +132,26 @@ header {
 .btn-bg-orange {
   background: var(--primary-orange);
   color: #fff;
-  font-weight: 600;
+}
+
+.btn-bg-white {
+  background: #fff;
+  color: var(--primary-orange);
 }
 
 .btn-section {
   margin-top: 30px;
   padding: 15px 30px;
   border-radius: 30px;
+  font-weight: 600;
 }
 
 .btn-shadow-orange {
   box-shadow: 0px 10px 30px -10px var(--glow-orange);
+}
+
+.btn-shadow-white {
+  box-shadow: 0px 10px 30px -10px #fff;
 }
 
 .span-label {
@@ -164,4 +184,137 @@ header {
 .text-feature {
   margin-top: 15px;
   font-size: 14px;
+}
+
+.img-icon-slide {
+  width: 20px;
+}
+
+.img-user {
+  width: 60px;
+}
+
+.reviews {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: var(--neutral-grey);
+  height: 300px;
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: var(--transition-slow);
+}
+
+.review-box {
+  overflow: hidden;
+  display: flex;
+  flex-shrink: 0;
+  gap: 30px;
+  min-width: 90%;
+  max-width: 90%;
+  height: 300px;
+  position: relative;
+}
+
+.review-1 {
+  transform: translateX(0);
+}
+.review-2 {
+  transform: translateX(110%);
+}
+.review-3 {
+  transform: translateX(220%);
+}
+.review-4 {
+  transform: translateX(330%);
+}
+
+.slide-dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot-slide {
+  width: 15px;
+}
+
+.btn-block-middle {
+  display: block;
+  margin: 50px auto;
+}
+
+.call-to-action,
+.footer {
+  width: 100%;
+  padding: 100px 25px;
+  background: var(--primary-orange);
+  text-align: center;
+}
+
+.heading-cta {
+  color: #fff;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer {
+  background: var(--primary-blue);
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.nav-link-footer {
+  color: var(--neutral-grey);
+  padding: 10px 0;
+  font-weight: initial;
+  text-align: left;
+  font-size: 14px;
+}
+
+.btn-form {
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.img-icon-social {
+  width: 35px;
+}
+
+.img-logo-footer {
+  width: 200px;
 }
