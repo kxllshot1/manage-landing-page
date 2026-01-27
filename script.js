@@ -1,6 +1,7 @@
 "use strict";
 
 const body = document.querySelector("body");
+body.style.overflowY = "scroll";
 const imgIcon = document.querySelector(".img-nav-icon");
 const iconHamburgerSrc = "images/bars-solid-full.svg";
 const iconCloseSrc = "images/x-solid-full.svg";
@@ -12,5 +13,4 @@ btnNav.addEventListener("click", function () {
   imgIcon.getAttribute("src") === iconHamburgerSrc
     ? imgIcon.setAttribute("src", iconCloseSrc)
     : imgIcon.setAttribute("src", iconHamburgerSrc);
-  body.style.overflowY === "scroll" ? "hidden" : "scroll";
 });
