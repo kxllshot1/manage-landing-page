@@ -1,3 +1,11 @@
+:root {
+  --primary-orange: hsl(12, 88%, 59%);
+  --primary-blue: hsl(228, 39%, 23%);
+  --dark-gray: hsl(233, 12%, 13%);
+  --neutral-orange: hsl(13, 100%, 96%);
+  --neutral-grey: hsl(0, 0%, 98%);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,4 +17,72 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Be Vietnam Pro";
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+li {
+  list-style: none;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+
+.box-nav-links {
+  width: 90%;
+  background: #fff;
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px -10px var(--dark-gray);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 600;
+}
+
+.box-nav-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-blue);
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.img-logo {
+  width: 120px;
+}
+
+.img-nav-icon {
+  width: 25px;
+}
+
+.btn-nav {
+  display: none;
+}
+
+.btn-nav-active {
+  display: inline;
 }
