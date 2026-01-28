@@ -107,6 +107,10 @@ header {
   display: inline;
 }
 
+.btn-header {
+  display: none;
+}
+
 .section {
   width: 100vw;
   padding: 100px 25px;
@@ -317,4 +321,182 @@ form {
 
 .img-logo-footer {
   width: 200px;
+}
+
+.footer-logo-and-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (min-width: 600px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-illustrations {
+    width: 400px;
+  }
+  .img-logo {
+    width: 125px;
+  }
+  .about {
+    width: 80%;
+  }
+  .reviews {
+    justify-content: center;
+    gap: 20px;
+  }
+  .review-box {
+    min-width: initial;
+    width: 450px;
+  }
+  .box-nav-links {
+    left: initial;
+    right: 20px;
+    width: 450px;
+  }
+  .section,
+  .footer {
+    padding: 100px 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-1 {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  .about-hero {
+    text-align: left;
+  }
+  .heading-hero {
+    font-size: 42px;
+  }
+  .footer {
+    flex-direction: row-reverse;
+    align-items: start;
+  }
+  .footer-logo-and-socials {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section,
+  .footer {
+    padding: 100px;
+  }
+  header {
+    padding: 0 100px;
+  }
+  .btn-nav-hamburger {
+    display: none;
+  }
+  .btn-nav-close {
+    display: none;
+  }
+  .box-nav-links {
+    position: initial;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: fit-content;
+    gap: 30px;
+    opacity: 1;
+    pointer-events: all;
+    border-radius: initial;
+    box-shadow: none;
+  }
+  .nav-link {
+    padding: 0;
+    width: initial;
+  }
+  header {
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+  }
+  .btn-header {
+    display: inline;
+    margin: 0;
+  }
+  .nav-link-footer {
+    padding: 15px 0;
+  }
+  .text-feature,
+  .text-section {
+    font-size: 15px;
+  }
+  .heading-feature {
+    font-size: 18px;
+  }
+  .feature-label {
+    background: none;
+  }
+  .section-2 {
+    flex-direction: row;
+    align-items: start;
+    gap: 50px;
+  }
+  .section-2 .about {
+    text-align: left;
+  }
+  .features {
+    margin: 0;
+  }
+  .review-box {
+    width: 80%;
+    height: 400px;
+    justify-content: center;
+  }
+  .review {
+    width: 500px;
+    justify-content: center;
+    padding: 0 30px;
+  }
+  .heading-section {
+    font-size: 30px;
+  }
+  .heading-hero {
+    font-size: 48px;
+  }
+  .heading-feature {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .text-section,
+  .text-feature {
+    font-size: 16px;
+  }
+  .section-1 {
+    gap: 60px;
+  }
+  .section {
+    padding: 150px 300px;
+  }
+  header {
+    padding: 0 300px;
+  }
+  button {
+    font-size: 16px;
+  }
+  .img-logo {
+    width: 200px;
+  }
+  .img-illustrations {
+    width: 500px;
+  }
+  .call-to-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+  }
 }

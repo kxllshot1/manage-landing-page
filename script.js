@@ -4,6 +4,7 @@ const iconHamburgerSrc = "images/bars-solid-full.svg";
 const iconCloseSrc = "images/x-solid-full.svg";
 const iconCircleFull = "images/circle-solid-full.svg";
 const iconCircleEmpty = "images/circle-regular-full.svg";
+const html = document.querySelector("html");
 const body = document.querySelector("body");
 const imgIcon = document.querySelector(".img-nav-icon");
 const btnNav = document.querySelector(".btn-nav");
@@ -18,6 +19,9 @@ btnNav.addEventListener("click", function () {
   imgIcon.getAttribute("src") === iconHamburgerSrc
     ? imgIcon.setAttribute("src", iconCloseSrc)
     : imgIcon.setAttribute("src", iconHamburgerSrc);
+  if (boxNav.classList.contains("box-nav-active"))
+    html.style.overflowY = "hidden";
+  else html.style.overflowY = "scroll";
 });
 
 const goToSlide = function (current) {
