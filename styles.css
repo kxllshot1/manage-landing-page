@@ -362,6 +362,9 @@ form {
   .footer {
     padding: 100px 50px;
   }
+  header {
+    padding: 0 50px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -479,10 +482,10 @@ form {
     gap: 60px;
   }
   .section {
-    padding: 150px 300px;
+    padding: 150px;
   }
   header {
-    padding: 0 300px;
+    padding: 0 150px;
   }
   button {
     font-size: 16px;
