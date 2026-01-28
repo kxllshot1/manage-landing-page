@@ -381,10 +381,21 @@ form {
   .footer {
     flex-direction: row-reverse;
     align-items: start;
+    justify-content: center;
+    gap: 100px;
   }
   .footer-logo-and-socials {
     flex-direction: column-reverse;
     align-items: start;
+  }
+  form {
+    justify-content: start;
+    width: fit-content;
+  }
+  .nav-footer {
+    justify-content: center;
+    gap: 50px;
+    width: 300px;
   }
 }
 
@@ -482,7 +493,7 @@ form {
     gap: 60px;
   }
   .section {
-    padding: 150px;
+    padding: 150px 0;
   }
   header {
     padding: 0 150px;
@@ -501,5 +512,13 @@ form {
     justify-content: space-between;
     align-items: center;
     padding: 100px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section {
+    width: 1200px;
   }
 }
